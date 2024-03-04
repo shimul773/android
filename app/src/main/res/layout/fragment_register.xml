@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Register"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Form"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/largefont"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/reg_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/regularfont"
+        android:textColor="@color/dangerous"
+        android:layout_marginTop="@dimen/header_bottom_margin"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="text"
+        android:background="@drawable/data_input"
+        android:paddingVertical="10dp"
+        android:paddingStart="20dp"
+        android:layout_marginVertical="@dimen/input_margin"
+        />
+    <EditText
+        android:id="@+id/reg_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your mobile"
+        android:inputType="phone"
+        android:background="@drawable/data_input"
+        android:paddingVertical="10dp"
+        android:paddingStart="20dp"
+        android:layout_marginVertical="@dimen/input_margin"
+        />
+
+    <Spinner
+        android:id="@+id/reg_area1_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/spinner_style"
+        android:layout_marginVertical="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/reg_area2_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/spinner_style"
+        android:layout_marginVertical="10dp"
+        />
+    <EditText
+        android:id="@+id/reg_house"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="House/Office"
+        android:inputType="text"
+        android:background="@drawable/data_input"
+        android:paddingVertical="10dp"
+        android:paddingStart="20dp"
+        android:layout_marginVertical="@dimen/input_margin"
+        />
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/data_input"
+        android:drawableEnd="@drawable/arrow"
+        android:paddingVertical="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginVertical="@dimen/input_margin"
+        />
+    <EditText
+        android:id="@+id/reg_cpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:background="@drawable/data_input"
+        android:drawableEnd="@drawable/arrow"
+        android:paddingVertical="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginVertical="@dimen/input_margin"
+        />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- #### TOP NAVBAR STARTS #### -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:background="@color/light">
+
+        <ImageView
+            android:id="@+id/toggle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hamburger"
+            />
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/data_input"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/activity_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:paddingStart="10dp"
+            android:textSize="@dimen/largefont"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <!-- #### TOP NAVBAR ENDS #### -->
+
+
+    <!-- #### FRAGMENTS STARTS #### -->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <!-- #### FRAGMENTS ENDS #### -->
+
+
+
+    <!-- #### BOTTOM NAVBAR STARTS #### -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottm_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_items"
+        android:background="@color/light"
+        />
+    <!-- #### BOTTOM NAVBAR STARTS #### -->
+
+</LinearLayout>

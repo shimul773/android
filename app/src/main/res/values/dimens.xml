@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="extrasmallfont">8sp</dimen>
+    <dimen name="smallfont">10sp</dimen>
+    <dimen name="regularfont">12sp</dimen>
+    <dimen name="largefont">16sp</dimen>
+    <dimen name="extralargefont">20sp</dimen>
+    <dimen name="logo">70sp</dimen>
+
+
+
+
+    <dimen name="header_top_margin">12dp</dimen>
+    <dimen name="header_bottom_margin">8dp</dimen>
+    <dimen name="input_margin">10dp</dimen>
+</resources>
